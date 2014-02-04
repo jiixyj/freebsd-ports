@@ -1,4 +1,3 @@
-%%DATADIR%%/basewsw/configs/jal.cfg
 %%DATADIR%%/basewsw/configs/server/gametypes/bomb.cfg
 %%DATADIR%%/basewsw/configs/server/gametypes/ca.cfg
 %%DATADIR%%/basewsw/configs/server/gametypes/ctf.cfg
@@ -43,35 +42,26 @@
 %%DATADIR%%/basewsw/configs/timer/ya2/3x.cfg
 %%DATADIR%%/basewsw/configs/timer/ya2/4x.cfg
 %%DATADIR%%/basewsw/configs/timer/ya2/5x.cfg
-%%DATADIR%%/basewsw/profiles/gfx_contrast.cfg
-%%DATADIR%%/basewsw/profiles/gfx_high+.cfg
-%%DATADIR%%/basewsw/profiles/gfx_high.cfg
-%%DATADIR%%/basewsw/profiles/gfx_low.cfg
-%%DATADIR%%/basewsw/profiles/gfx_medium.cfg
-%%DATADIR%%/basewsw/data0_06.pk3
-%%DATADIR%%/basewsw/data0_06_001.pk3
-%%DATADIR%%/basewsw/data0_06pure.pk3
-%%DATADIR%%/basewsw/data1_06.pk3
-%%DATADIR%%/basewsw/data1_06pure.pk3
+%%DATADIR%%/basewsw/data0_10.pk3
+%%DATADIR%%/basewsw/data0_10pure.pk3
+%%DATADIR%%/basewsw/data1_10.pk3
+%%DATADIR%%/basewsw/data1_10pure.pk3
 %%DATADIR%%/basewsw/dedicated_autoexec.cfg
 %%DATADIR%%/basewsw/editortextures.pk3
+%%DATADIR%%/basewsw/map_ui.pk3
 %%DATADIR%%/basewsw/map_wamphi1.pk3
-%%DATADIR%%/basewsw/map_wamphi2.pk3
 %%DATADIR%%/basewsw/map_wbomb1.pk3
 %%DATADIR%%/basewsw/map_wbomb2.pk3
 %%DATADIR%%/basewsw/map_wbomb3.pk3
 %%DATADIR%%/basewsw/map_wbomb4.pk3
 %%DATADIR%%/basewsw/map_wbomb5.pk3
+%%DATADIR%%/basewsw/map_wbomb6.pk3
 %%DATADIR%%/basewsw/map_wca1.pk3
-%%DATADIR%%/basewsw/map_wca1_001.pk3
 %%DATADIR%%/basewsw/map_wca2.pk3
-%%DATADIR%%/basewsw/map_wca3.pk3
 %%DATADIR%%/basewsw/map_wctf1.pk3
-%%DATADIR%%/basewsw/map_wctf1_001.pk3
 %%DATADIR%%/basewsw/map_wctf2.pk3
 %%DATADIR%%/basewsw/map_wctf3.pk3
 %%DATADIR%%/basewsw/map_wctf4.pk3
-%%DATADIR%%/basewsw/map_wctf5.pk3
 %%DATADIR%%/basewsw/map_wctf6.pk3
 %%DATADIR%%/basewsw/map_wda1.pk3
 %%DATADIR%%/basewsw/map_wda2.pk3
@@ -84,24 +74,22 @@
 %%DATADIR%%/basewsw/map_wdm13.pk3
 %%DATADIR%%/basewsw/map_wdm14.pk3
 %%DATADIR%%/basewsw/map_wdm15.pk3
+%%DATADIR%%/basewsw/map_wdm16.pk3
+%%DATADIR%%/basewsw/map_wdm17.pk3
 %%DATADIR%%/basewsw/map_wdm18.pk3
 %%DATADIR%%/basewsw/map_wdm19.pk3
-%%DATADIR%%/basewsw/map_wdm19_001.pk3
 %%DATADIR%%/basewsw/map_wdm2.pk3
-%%DATADIR%%/basewsw/map_wdm20.pk3
 %%DATADIR%%/basewsw/map_wdm3.pk3
 %%DATADIR%%/basewsw/map_wdm4.pk3
 %%DATADIR%%/basewsw/map_wdm5.pk3
-%%DATADIR%%/basewsw/map_wdm5_001.pk3
 %%DATADIR%%/basewsw/map_wdm6.pk3
-%%DATADIR%%/basewsw/map_wdm6_001.pk3
 %%DATADIR%%/basewsw/map_wdm7.pk3
-%%DATADIR%%/basewsw/map_wdm8.pk3
 %%DATADIR%%/basewsw/map_wdm9.pk3
+%%DATADIR%%/basewsw/map_wrace1.pk3
 %%DATADIR%%/basewsw/models_nate.pk3
-%%DATADIR%%/basewsw/modules_06.pk3
-%%DATADIR%%/basewsw/modules_06_001.pk3
-%%DATADIR%%/basewsw/modules_06_002.pk3
+%%DATADIR%%/basewsw/modules_10.pk3
+%%DATADIR%%/basewsw/modules_101.pk3
+%%DATADIR%%/basewsw/modules_102.pk3
 %%DATADIR%%/basewsw/tex_36.pk3
 %%DATADIR%%/basewsw/tex_baxandall.pk3
 %%DATADIR%%/basewsw/tex_billboard.pk3
@@ -112,7 +100,7 @@
 %%DATADIR%%/basewsw/tex_cleansurface.pk3
 %%DATADIR%%/basewsw/tex_concrete.pk3
 %%DATADIR%%/basewsw/tex_decals.pk3
-%%DATADIR%%/basewsw/tex_env1.pk3
+%%DATADIR%%/basewsw/tex_env.pk3
 %%DATADIR%%/basewsw/tex_etr.pk3
 %%DATADIR%%/basewsw/tex_exwsw.pk3
 %%DATADIR%%/basewsw/tex_factory.pk3
@@ -127,9 +115,12 @@
 %%DATADIR%%/basewsw/tex_metal.pk3
 %%DATADIR%%/basewsw/tex_nature.pk3
 %%DATADIR%%/basewsw/tex_neon.pk3
+%%DATADIR%%/basewsw/tex_noir.pk3
 %%DATADIR%%/basewsw/tex_plastic.pk3
 %%DATADIR%%/basewsw/tex_refly.pk3
 %%DATADIR%%/basewsw/tex_russus.pk3
+%%DATADIR%%/basewsw/tex_scifi_interior.pk3
+%%DATADIR%%/basewsw/tex_scifi_interior_001.pk3
 %%DATADIR%%/basewsw/tex_sky.pk3
 %%DATADIR%%/basewsw/tex_solidfake.pk3
 %%DATADIR%%/basewsw/tex_supersymmetry.pk3
@@ -137,65 +128,26 @@
 %%DATADIR%%/basewsw/tex_tiles.pk3
 %%DATADIR%%/basewsw/tex_window.pk3
 %%DATADIR%%/basewsw/tex_wood.pk3
+%%DATADIR%%/basewsw/tex_wrace1.pk3
 %%DATADIR%%/basewsw/tex_wsw_cave1.pk3
 %%DATADIR%%/basewsw/tex_wsw_city1.pk3
 %%DATADIR%%/basewsw/tex_wsw_flareshalos.pk3
 %%DATADIR%%/basewsw/tex_zone_neutre.pk3
 %%DATADIR%%/basewsw/tvserver_autoexec.cfg
-%%MAPPACK%%%%DATADIR%%/basewsw/cwCTF1.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwL1.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwL2.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwL3.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwL4.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwL5.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwM1.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwM2.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwM3.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwM4.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwM5.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwM6.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwM7.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwRACE1.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwRACE2.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwRACE3.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwRACE4.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwRACE5.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwS1.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cwS2.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cw_tex1.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/cw_tex2.pk3
-%%MAPPACK%%%%DATADIR%%/basewsw/map_cwBOMB1.pk3
-%%MAPPACK%%%%DATADIR%%/previews/cwBOMB1.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwCTF1.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwL1.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwL2.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwL3.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwL4.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwL5.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwM1.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwM2.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwM3.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwM4.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwM5.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwM6.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwM7.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwRACE1.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwRACE2.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwRACE3.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwRACE4.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwRACE5.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwS1.jpg
-%%MAPPACK%%%%DATADIR%%/previews/cwS2.jpg
-%%MAPPACK%%@dirrm %%DATADIR%%/previews
-@dirrm %%DATADIR%%/basewsw/profiles
-@dirrm %%DATADIR%%/basewsw/configs/timer/ya2
-@dirrm %%DATADIR%%/basewsw/configs/timer/ya
-@dirrm %%DATADIR%%/basewsw/configs/timer/ra
-@dirrm %%DATADIR%%/basewsw/configs/timer/quad
-@dirrm %%DATADIR%%/basewsw/configs/timer/bs
-@dirrm %%DATADIR%%/basewsw/configs/timer
-@dirrm %%DATADIR%%/basewsw/configs/server/gametypes
-@dirrm %%DATADIR%%/basewsw/configs/server
-@dirrm %%DATADIR%%/basewsw/configs
-@dirrm %%DATADIR%%/basewsw
-@dirrm %%DATADIR%%
+%%DATADIR%%/basewsw/ui/porkui/template.rml
+%%DATADIR%%/basewsw/ui_porkui.pk3
+%%DATADIR%%/basewsw/ui_porkui_001.pk3
+%%DATADIR%%/basewsw/ui_porkui_002.pk3
+@dirrmtry %%DATADIR%%/basewsw/ui/porkui
+@dirrmtry %%DATADIR%%/basewsw/ui
+@dirrmtry %%DATADIR%%/basewsw/configs/timer/ya2
+@dirrmtry %%DATADIR%%/basewsw/configs/timer/ya
+@dirrmtry %%DATADIR%%/basewsw/configs/timer/ra
+@dirrmtry %%DATADIR%%/basewsw/configs/timer/quad
+@dirrmtry %%DATADIR%%/basewsw/configs/timer/bs
+@dirrmtry %%DATADIR%%/basewsw/configs/timer
+@dirrmtry %%DATADIR%%/basewsw/configs/server/gametypes
+@dirrmtry %%DATADIR%%/basewsw/configs/server
+@dirrmtry %%DATADIR%%/basewsw/configs
+@dirrmtry %%DATADIR%%/basewsw
+@dirrmtry %%DATADIR%%

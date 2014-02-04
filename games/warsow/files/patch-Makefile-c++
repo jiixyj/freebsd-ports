@@ -1,6 +1,6 @@
---- ./Makefile.orig	2014-02-04 00:37:38.338698605 +0100
-+++ ./Makefile	2014-02-04 00:48:30.253639164 +0100
-@@ -50,21 +50,13 @@
+--- ./Makefile-c++.orig	2014-02-04 00:37:40.649691176 +0100
++++ ./Makefile-c++	2014-02-04 00:48:29.124638558 +0100
+@@ -52,21 +52,13 @@
  else
  CC?=gcc
  CXX?=g++
@@ -24,8 +24,8 @@
  SHARED_LIBRARY_EXTENSION=so
  endif
  
-@@ -123,7 +115,7 @@
- CFLAGS_ROCKET+=-Iui
+@@ -128,7 +120,7 @@
+ CFLAGS_ROCKET+=-Iui.rocket
  
  # static link to custombuilt lib
 -LDFLAGS_ROCKET=-L$(LIBROCKET_DIR)/lib -lRocketWSW -lfreetype
@@ -33,7 +33,7 @@
  # dynamic link to 'official' build
  # LDFLAGS_ROCKET=-L$(LIBROCKET_DIR)/Build -lRocketCore -lRocketControls -lfreetype
  
-@@ -210,7 +202,7 @@
+@@ -209,7 +201,7 @@
  CFLAGS_TV_SERVER=-DDEDICATED_ONLY -DTV_SERVER_ONLY -DC_ONLY -DTV_MODULE_HARD_LINKED
  
  LDFLAGS_COMMON=$(LDFLAGS)
@@ -42,17 +42,17 @@
  
  ifeq ($(OS),FreeBSD)
  LDFLAGS_COMMON+= -L/usr/local/lib -lm -pthread
-@@ -298,12 +290,9 @@
+@@ -288,12 +280,9 @@
  ######################################################################################################
  # Helper functions
  ######################################################################################################
 -DO_CC=echo "  > Compiling $<" && \
--	$(CC) $(CFLAGS_COMMON) -c $< -o $@
+-	$(CC) -x c++ $(CFLAGS_COMMON) -c $< -o $@
 -DO_CXX=echo "  > Compiling (c++) $<" && \
 -	$(CXX) $(CFLAGS_COMMON) $(CXXFLAGS_COMMON) -c $< -o $@
 -DO_RES=echo "  > Compiling resource $<" && \
 -	$(RES) $(RESFLAGS_COMMON) -i $< -o $@
-+DO_CC=$(CC) $(CFLAGS_COMMON) -c $< -o $@
++DO_CC=$(CC) -x c++ $(CFLAGS_COMMON) -c $< -o $@
 +DO_CXX=$(CXX) $(CFLAGS_COMMON) $(CXXFLAGS_COMMON) -c $< -o $@
 +DO_RES=$(RES) $(RESFLAGS_COMMON) -i $< -o $@
  

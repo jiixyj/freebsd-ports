@@ -2,67 +2,56 @@
 # $FreeBSD$
 
 PORTNAME=	data
-PORTVERSION=	0.6.2
+PORTVERSION=	1.0.2
 CATEGORIES=	games
-MASTER_SITES=	http://www.zcdn.org/dl/ \
-		http://static.warsow.net/release/:mappack \
-		http://rewq.de/scratch/wsw05/:mappack
+MASTER_SITES=	SF/warsow.mirror/Warsow%20${PORTVERSION:R}${PORTVERSION:E}/ \
+		http://www.zcdn.org/dl/${PORTVERSION:R}${PORTVERSION:E}/ \
+		http://wsw.null.so/ \
+		http://www.warsow.net:1337/~warsow/${PORTVERSION:R}${PORTVERSION:E}/
 PKGNAMEPREFIX=	warsow-
-DISTNAME=	${PKGNAMEPREFIX:S/-//}_0.61_unified
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		${PKGNAMEPREFIX:S/-//}_0.62_update${EXTRACT_SUFX}
+DISTNAME=	${PKGNAMEPREFIX:S/-//}_${PORTVERSION:R}${PORTVERSION:E}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Warsow data files
 
+LICENSE=	WARSOW GPLv2
+LICENSE_COMB=	multi
+LICENSE_NAME_WARSOW=	Warsow Content License
+LICENSE_FILE_WARSOW=	${WRKSRC}/docs/license.txt
+LICENSE_PERMS_WARSOW=	pkg-mirror dist-mirror
+
 # Package size below is for default set of OPTIONS
-NO_PACKAGE=	Package will be 574MB, set FORCE_PACKAGE if you really want it
-
-DEPRECATED=	Broken for more than 6 month
-EXPIRATION_DATE=	2013-12-22
-
-BROKEN=		warsow_0.61_unified.zip is unfetchable
+NO_PACKAGE=	Package will be 493MB, set FORCE_PACKAGE if you really want it
 
 # Game port is restricted to these architectures, so it makes no sense to
 # package game data port as well (even it is not being technically built)
 ONLY_FOR_ARCHS=	i386 amd64
-
-USE_ZIP=	yes
 
 NO_BUILD=	yes
 DATADIR=	${PREFIX}/share/${PKGNAMEPREFIX:S/-//}
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX:S/-//}
 TXTDOCS=	bots_navigation.txt changelog.txt contact.txt \
 		dedicated_server_quide.txt demoavi.txt democams.txt \
-		features.txt huds.txt license.txt mousefilter.txt \
-		query_protocols.txt
+		features.txt huds.txt license.txt linux_sound_sdl.txt \
+		mousefilter.txt old_changelog.txt query_protocols.txt
 PORTDOCS=	0.4_renderer_changes.png ${TXTDOCS}
 
-OPTIONS_DEFINE=	MAPPACK DOCS
-OPTIONS_DEFAULT=	MAPPACK
-MAPPACK_DESC=		Install community map pack
+OPTIONS_DEFINE=	DOCS
 
-NO_STAGE=	yes
 .include <bsd.port.options.mk>
 
-.if ${PORT_OPTIONS:MMAPPACK}
-DISTFILES+=	warsow_comunity_map_pack_01${EXTRACT_SUFX}:mappack
-PLIST_SUB+=	MAPPACK=""
-.else
-PLIST_SUB+=	MAPPACK="@comment "
-.endif
+pre-patch:
+	${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${WRKSRC}/basewsw/ui_porkui.pk3     -C ${WRKSRC}/basewsw ${EXTRACT_AFTER_ARGS}
+	${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${WRKSRC}/basewsw/ui_porkui_001.pk3 -C ${WRKSRC}/basewsw ${EXTRACT_AFTER_ARGS}
+	${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${WRKSRC}/basewsw/ui_porkui_002.pk3 -C ${WRKSRC}/basewsw ${EXTRACT_AFTER_ARGS}
 
 do-install:
-	@${MKDIR} ${DATADIR}
-	cd ${WRKSRC} && ${COPYTREE_SHARE} basewsw ${DATADIR}
-	cd ${WRKDIR} && ${COPYTREE_SHARE} basewsw ${DATADIR}
-.if ${PORT_OPTIONS:MMAPPACK}
-	cd ${WRKDIR} && ${COPYTREE_SHARE} previews ${DATADIR}
-.endif
+	@${MKDIR} ${STAGEDIR}${DATADIR}
+	cd ${WRKSRC} && ${COPYTREE_SHARE} basewsw ${STAGEDIR}${DATADIR}
 .if ${PORT_OPTIONS:MDOCS}
-	@${MKDIR} ${DOCSDIR}
-	cd ${WRKSRC}/docs && ${INSTALL_DATA} ${PORTDOCS} ${DOCSDIR}
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC}/docs && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
