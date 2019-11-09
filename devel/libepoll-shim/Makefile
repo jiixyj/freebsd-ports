@@ -16,7 +16,7 @@ USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	jiixyj
 GH_PROJECT=	epoll-shim
-GH_TAGNAME=	ea515f060411bec7abfa6c52eeb50f62071fd16b
+GH_TAGNAME=	b99d614abf0c58b43bc5cf796c38780aeb71d5b0
 
 USE_LDCONFIG=	yes
 
